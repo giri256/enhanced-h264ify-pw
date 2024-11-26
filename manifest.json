@@ -21,10 +21,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.pw.live/*",
-        "*://*.youtube.com/*",
-        "*://*.youtube-nocookie.com/*",
-        "*://*.youtu.be/*"
+        "<all_urls>"
       ],
       "js": [
         "src/content_script.js"
@@ -36,10 +33,7 @@
   "web_accessible_resources": [
     {
       "matches": [
-        "*://*.pw.live/*",
-        "*://*.youtube.com/*",
-        "*://*.youtube-nocookie.com/*",
-        "*://*.youtu.be/*"
+        "<all_urls>"
       ],
       "resources": [
         "src/inject/inject_codec_check.js",
